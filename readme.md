@@ -41,7 +41,7 @@ This project was created for **learning purposes** to practice responsive design
 🌍 Deployment
 
 Deployed using GitHub Pages:
-👉 [View on GitHub Pages]()
+👉 [View on GitHub Pages](https://mohitchauhan-stack.github.io/Lazarev-Clone/)
 
 📌 Notes
 
