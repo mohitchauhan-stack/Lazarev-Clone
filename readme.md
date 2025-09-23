@@ -23,8 +23,12 @@ This project was created for **learning purposes** to practice responsive design
 
 
 ## 📸 Preview
-(Add a screenshot of your project once deployed)
-`![Project Screenshot](assets/preview.png)`
+
+`![Website Header](my-assets/website-header.png)`
+
+`![Website Footer](my-assets/website-footer.png)`
+
+`![Website Specs](my-assets/website-specs.png)`
 
 ---
 
