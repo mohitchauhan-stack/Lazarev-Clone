@@ -1,3 +1,4 @@
+
                 /*  ----------  resets --------------  */
 
 *{
@@ -14,14 +15,7 @@ body{
     width: 100%;
 }
 
-            /* global variables  */
-/* :root{
-    --primary-text-color: white;
-    --secondary-text-color: #451e91;
-    --accent-color: #28ffc0;
-    --accent-color-dark: #20cc00;
-    --padding-inline-section: 20px;
-} */
+                    /* ---------- utility - classes ------------*/
 
 .primary-button{
     color: #000;
@@ -40,15 +34,11 @@ a{
     display: inline-block;
 }
 
-/* .container{
-    min-height: 100vh;
-    width: 100%;
-} */
 
                     /*  ------------------ nav - bar ------------------  */
 nav{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(91, 91, 91, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     align-items: flex-start;
@@ -80,6 +70,7 @@ nav h1{
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 2.5vw;
+    margin-inline: 1vw;
 }
 
 .nav-part2 h5{
@@ -99,17 +90,12 @@ nav h1{
 .nav-bottom{
     width: 80%;
     height: 0vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(50px);
+    background-color: rgba(91, 91, 91, 0.3);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 100%;
     z-index: 9;
     border-bottom: .5px solid white;
-}
-
-nav:hover .nav-bottom{
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
 }
 
 
@@ -135,14 +121,6 @@ nav:hover .nav-bottom{
     /* background-color: #810100; */
     line-height: 8vw;
 }
-
-/* .page1 h1 i{
-    background-color: #810100;
-    height: 15vh;
-    width: 15vh;
-    border-radius: 50%;
-    border: 10px solid green;
-} */
 
 .page1 p{
     text-align: center;
@@ -193,12 +171,6 @@ nav:hover .nav-bottom{
     gap: 2vw; */
 }
 .move{
-    /* display: flex; */
-    /* height: 15vh;
-    width: 15vh; */
-    /* align-items: center;
-    gap: 2vw; */
-    
     display: inline-block;
     animation: mobe 15s linear infinite;
 }
@@ -240,15 +212,10 @@ nav:hover .nav-bottom{
 
 
 
-
-
-
-
                     /*  ------------------ page - 2 ------------------  */
 
 .page2{
     height: 100vh;
-    width: 100%;
     background-color: #000000;
     position: relative;
     padding: 0vw 10vw;
@@ -374,9 +341,6 @@ nav:hover .nav-bottom{
     opacity: 0;
     border-radius: 30px;
 }
-
-
-
 
 
                     /*  ------------------ page - 4 ------------------  */
@@ -1203,19 +1167,19 @@ summary::marker{
 }
 
 .examples-card:nth-child(1){
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(my-assets/asset\ 32.jpeg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/my-assets/asset\ 32.jpeg);
     background-size: cover;
 }
 .examples-card:nth-child(2){
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(my-assets/asset\ 33.jpeg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/my-assets/asset\ 33.jpeg);
     background-size: cover;
 }
 .examples-card:nth-child(3){
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(my-assets/asset\ 34.jpeg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/my-assets/asset\ 34.jpeg);
     background-size: cover;
 }
 .examples-card:nth-child(4){
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(my-assets/asset\ 35.jpeg);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/my-assets/asset\ 35.jpeg);
     background-size: cover;
 }
 

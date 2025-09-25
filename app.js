@@ -67,7 +67,6 @@ function loadingAnimation(){
 
 
 
-
 function navAnimation() {
     var nav = document.querySelector("nav");
 
@@ -111,6 +110,8 @@ function navAnimation() {
         })
     })
 }
+
+
 
 
 
