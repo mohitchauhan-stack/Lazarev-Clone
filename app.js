@@ -168,7 +168,7 @@ function page3VideoAnimation(){
         gsap.to( video, {
             transform: "scaleX(0) scaleY(0)",
             opacity: 0,
-            borrderRadius: "20px"
+            borderRadius: "20px"
         })
     })
 }
