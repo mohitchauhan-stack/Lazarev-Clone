@@ -73,9 +73,12 @@ function navAnimation() {
     nav.addEventListener("mouseenter", function () {
     let tl = gsap.timeline();
 
+    tl.to( ".nav-part2", {
+        height: "21vh",
+    })
     tl.to( ".nav-bottom", {
-        height: "20vh",
-        backdropFilter: "blur(10px)",
+        height: "21vh",
+        duration: .1
     })
     tl.to( ".nav-part2 h5", {
         display: "block"
@@ -340,14 +343,14 @@ function page11Animations(){
 
 
 
-locomotiveAnimation()
-loadingAnimation()
+locomotiveAnimation();
+loadingAnimation();
 navAnimation();
 page2Animation ();
 page3VideoAnimation();
 page7VideoAnimation();
-page8VideoAnimation()
-page11Animations()
+page8VideoAnimation();
+page11Animations();
 
 
 

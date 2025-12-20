@@ -3,28 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAZAREV. 📟 - Digital Product Design Agency | Award Winning Ui & Ux Agency</title>
+
+
     <link rel="icon" href="./my-assets/lazare-logo.png" type="image/png" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 
 
+    <title>LAZAREV. 📟 - Digital Product Design Agency | Award Winning Ui & Ux Agency</title>
 </head>
-<body>
+<body class="flex">
 
-    <!-- nav bar -->
+<div class="container flex">
+    <!-- NAV - BAR -->
+    <nav class="nav flex nav__container">
+        <!-- NAV - LOGO -->
+        <div class="nav__logo">
+            <a href="#" class="logo">
+                <h2>LAZAREV.</h2>
+            </a>
+        </div>
+
+        <div class="nav__right flex">
+            <!-- NAV - MENU -->
+            <div class="nav__menu">
+                <ul class="nav__list flex">
+                    <!-- DROPDOWN - 1 -->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button flex">
+                            <h5>WHAT WE DO</h5> <i class="ri-arrow-down-s-line btn__icon arrow__down"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <ul class="dropdown__list flex">
+                                <li>
+                                    <a href="#" class="dropdown__link">🔥 AI & ML</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">FINTECH</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">WEB 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">ADTECH</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">LOGISTICS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">HEALTHCARE</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li><a class="nav__link"  href="#"><h5>CASES</h5></a></li>
+                    <li><a class="nav__link" href="#"><h5>OUTCOMES</h5></a></li>
+                    <li><a  class="nav__link" href="#"><h5>NEWS</h5></a></li>
+                </ul>
+            </div>
+
+            <!-- NAV - BUTTONS -->
+            <div class="nav__btn flex">
+                <h5>Lets Talk</h5>
+                <i class="ri-pencil-line btn__icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- HERO - HEADING -->
+    <header class="hero__section">
+        <h5 class="small__heading light">AI + Product Design Agency  ///  San Francisco</h5>
+        <div class="big__head__container">
+            <h1 class="big__heading">UX-First Design Agency</h5>
+            <h1 class="big__heading">for B2B + AI Companies</h5>
+        </div>
+        <h5 class="unique__heading light">We launch <span class="highlight">MVPs</span> redefine <span class="highlight">existing products</span> & continuously dive into <span class="highlight">customer development</span></h5>
+    </header>
+    <!-- HERO - VIDEO  -->
+    <video loop muted autoplay src="./my-assets/showreel_preview_1920_v3.mp4" class="hero__video" id="hero-video"></video>
+
+    <!-- BENTO - GRID - SECTION -->
+    <div class="grid__container">
+        <div class="box flex" style="grid-area: box_1;">
+            <p class="box__num">/01</p>
+            <div class="box__desc flex">
+                <h2 class="box_head">$500 M+</h2>
+                <h5 class="box__text">in funding secured</h5>
+                <h5 class="box__text">for our clients</h5>
+            </div>
+        </div>
+        <div class="box flex" style="grid-area: box_2;">
+            <p class="box__num">/02</p>
+            <div class="box__desc flex">
+                <h2 class="box_head">120+</h2>
+                <h5 class="box__text">Awards backing</h5>
+                <h5 class="box__text">our excellence</h5>
+            </div>
+        </div>
+        <div class="box flex" style="grid-area: box_3;">
+            <p class="box__num">/03</p>
+            <div class="box__desc flex">
+                <h2 class="box_head">2015</h2>
+                <h5 class="box__text">Founded, 9 years</h5>
+                <h5 class="box__text">of experience</h5>
+            </div>
+        </div>
+        <div class="box flex" style="grid-area: box_4;">
+            <p class="box__num">/04</p>
+            <div class="box__desc flex">
+                <h2 class="box_head">San Francisco</h2>
+                <h5 class="box__text">Based in heart of AI</h5>
+            </div>
+        </div>
+        <div class="box flex" style="grid-area: box_5;">
+            <p class="box__num">/05</p>
+            <div class="box__desc flex">
+                <h2 class="box_head">All-in-One Solution</h2>
+                <h5 class="box__text">From user-research to scalable design systems</h5>
+                <h5 class="box__text">we’ve got you covered</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta__section">
+        <div class="cta__bg flex">
+            <div class="cta__content flex">
+                <div class="cta__head">
+                    <h1 class="cta__heading">Golden standard in UX + AI</h1>
+                    <h5 class="cta__text">Look, we’ve been designing AI experiences since 2017, and we’re not just dabbling in it;
+                        we’re dominating. We’ve tackled Adtech, Salestech, Fintech, Legaltech, Media — you name it.</h5>
+                </div>
+                <div class="cta__btns flex">
+                    <h5 class="Q-text">
+                        Want to see how we do it?
+                    </h5>
+                    <h5 class="cta__btn">
+                        Check our UX + AI innovations here
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CLIENTS - SECTION -->
+    <section class="clients__section">
+        <h2 class="cl__head">Our Clients</h2>
+        <h5 class="cl__text">Whether you're an AI startup aiming for Series D or an established brand seeking a digital transformation, our award-winning team will take your user-experience to the next level.</h5>
+        <div class="company__container">
+            <div class="comp" style="grid-area: cmp_1;">
+                <img src="./my-assets/sopra-bank.avif" alt="#" class="comp__img">
+                <p class="comp__disc">We enhanced the UX for advanced Shopify analytics, helping Peel raise $5M and leading to its acquisition by Shopify.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_2;">
+                <img src="./my-assets/corem-draw.webp" alt="#" class="comp__img">
+                <p class="comp__disc">Streamlining Boeing’s blueprint approval process, we optimized and simplified company-wide procedures.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_3;">
+                <img src="./my-assets/sopra-bank.avif" alt="#" class="comp__img">
+                <p class="comp__disc">Supporting Blade’s marketing activities in the US and Europe, we boosted their market presence and engagement.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_4;">
+                <img src="./my-assets/corem-draw.webp" alt="#" class="comp__img">
+                <p class="comp__disc">We transformed internal communication and onboarding at Hewlett Packard by creating a series of engaging motion reels, making the training process more effective.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_5;">
+                <img src="./my-assets/vt.webp" alt="#" class="comp__img">
+                <p class="comp__disc">Designed an AI + News platform for content company founded by Patric Bet-David.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_6;">
+                <img src="./my-assets/corem-draw.webp" alt="#" class="comp__img">
+                <p class="comp__disc">Improving UX on Corel Draw’s landing pages, we enhanced user experience and engagement.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_7;">
+                <img src="./my-assets/abu-dabi-uni.avif" alt="#" class="comp__img">
+                <p class="comp__disc">Creating a new learning experience for Abu Dhabi University, we drove educational innovation and engagement.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_8;">
+                <img src="./my-assets/corem-draw.webp" alt="#" class="comp__img">
+                <p class="comp__disc">Designing digital campaigns for Merkle, we attracted more customers and drove engagement.</p>
+            </div>
+            <div class="comp" style="grid-area: cmp_9;">
+                <img src="./my-assets/sopra-bank.avif" alt="#" class="comp__img">
+                <p class="comp__disc">We uplifted Sopra Banking Software website design system for scalability, enhancing their digital presence.</p>
+            </div>
+        </div>
+        <h5 class="cl__btn">
+            Read All Outcomes
+        </h5>
+    </section>
+
+    <!-- SUCCESS - STORIES -->
+    <div class="success__container flex">
+        <div class="content__sc flex">
+            <div class="sc__heading">
+                <h2 class="sc__head">Success Stories</h2>
+                <h2 class="sc__head">Shaped by Our</h2>
+                <h2 class="sc__head">User Experience</h2>
+                <h2 class="sc__head">Design Agency</h2>
+            </div>
+            <div class="sc__content flex">
+                <div class="content">
+                    <h5 class="ct__head muted">PARTNERSHIP MENTALITY</h5>
+                    <h4 class="ct">Along with taking the lead in designing AI-powered solutions, we embody a partnership mentality. This exact commitment has been the bedrock of our clients’ successes.  When you choose to collaborate with us, we promise to be right where your audience's changing desires meet your ambitious business goals. We don't settle for mediocrity; we strive for excellence in every Figma pixel, every touchpoint, and every UX interaction.
+                    </h4>
+                </div>
+                <div class="sc__content_2">
+                    <div class="content">
+                        <h5 class="ct__head muted">RESULTS</h5>
+                        <h4 class="ct">That is how we've built 50+ sustainable startup products and helped 400+ brands secure millions in funding, achieve successful acquisitions, and establish themselves as globally recognized companies.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS GRID -->
+    <section class="ac__section flex">
+        <div class="ac__container">
+            <div class="ac flex" style="grid-area: ac_1;">
+                <h2 class="ac__head">
+                    $500M
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        In funding secured <br>owning to our designs
+                    </h5>
+                    <p class="ac__num muted">
+                        /001
+                    </p>
+                </div>
+            </div>
+            <div class="ac flex" style="grid-area: ac_2;">
+                <h2 class="ac__head">
+                    +1 million
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        Increase <br>in customer base
+                    </h5>
+                    <p class="ac__num muted">
+                        /002
+                    </p>
+                </div>
+            </div>
+            <div class="ac flex" style="grid-area: ac_3;">
+                <h2 class="ac__head">
+                    1 000 000+
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        Of active <br>marketplace users
+                    </h5>
+                    <p class="ac__num muted">
+                        /003
+                    </p>
+                </div>
+            </div>
+            <div class="ac flex" style="grid-area: ac_4;">
+                <h2 class="ac__head">
+                    25 million
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        Monthly <br>E-commerce visits
+                    </h5>
+                    <p class="ac__num muted">
+                        /004
+                    </p>
+                </div>
+            </div>
+            <div class="ac flex" style="grid-area: ac_5;">
+                <h2 class="ac__head">
+                    +300%
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        Increase in sign-up <br>conversion rate
+                    </h5>
+                    <p class="ac__num muted">
+                        /005
+                    </p>
+                </div>
+            </div>
+            <div class="ac flex" style="grid-area: ac_6;">
+                <h2 class="ac__head">
+                    +42%
+                </h2>
+                <div class="ac__content flex">
+                    <h5 class="ac__text muted">
+                        Increase in the app’s <br>retention rate
+                    </h5>
+                    <p class="ac__num muted">
+                        /006
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SECTIONS -->
+    <section class="feature__section">
+        <div class="feature__top">
+            <div class="feature__heading">
+                <h2 class="fea__head">Featured digital</h2>
+                <h2 class="fea__head">design projects</h2>
+            </div>
+            <h5 class="fea__text">
+                Our portfolio encompasses a wide range of digital designs essential for the growth of modern businesses. From B2B SaaS and B2C mobile apps to marketing design for promotions, we display our work created for early-stage startups and enterprises at various stages of their growth.
+            </h5>
+        </div>
+        <div class="feature__bottom">
+            <div class="fea__left">
+                <div class="fea__left__top">
+                    <div class="op flex">
+                        <p class="op__text">
+                            AI
+                        </p>
+                        <p class="op__num">
+                            [7]
+                        </p>
+                    </div>
+                    <div class="op flex">
+                        <p class="op__text">
+                            FINTECH
+                        </p>
+                        <p class="op__num">
+                            [4]
+                        </p>
+                    </div>
+                    <div class="op flex">
+                        <p class="op__text">
+                            OTHER
+                        </p>
+                        <p class="op__num">
+                            [32]
+                        </p>
+                    </div>
+                    <div class="op flex">
+                        <p class="op__text">
+                            WEB3
+                        </p>
+                        <p class="op__num">
+                            [5]
+                        </p>
+                    </div>
+                </div>
+                <p class="fea__left__bottom btn cta__btn">SEE ALL CASE STUDIES</p>
+            </div>
+            <div class="fea__rigth"></div>
+        </div>
+    </section>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    nav bar
     <nav>
         <h1>LAZAREV.</h1>
 
-        <!-- part - 2 -->
+        part - 2
         <div class="nav-part2">
             <div class="nav-elem">
                 <h4>Case Studies</h4>
@@ -59,18 +426,17 @@
 
         <button class="primary-button">Let's Talk</button>
 
-        <!-- nav bottom -->
+        nav bottom
         <div class="nav-bottom">
-            
         </div>
     </nav>
 
 
 
-<!-- main parent - wrapper -->
+main parent - wrapper
     <div class="main">
 
-        <!-- page 1 -->
+        page 1
         <div class="page1">
             <h3>AI + Product Design Agency /// San Francisco.</h3>
             <br><br>
@@ -107,7 +473,7 @@
             </div>
         </div>
         
-        <!-- page 2 -->
+        page 2
         <div class="page2">
             <div class="page2-left">
                 <p>Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. Dolorem.</p>
@@ -133,7 +499,7 @@
             </div>
         </div>
 
-        <!-- page 3 -->
+        page 3
         <div class="page3">
             <video src="./my-assets/video-t-s-n-1.mp4"></video>
             <div class="page3-center">
@@ -144,7 +510,7 @@
             </div>
         </div>
 
-        <!--  page 4  -->
+         page 4 
         <div class="page4">
             <div class="page4-left">
                 <h1>Success Stories <br> Shaped By Our <br> User Experience <br> Design Agency.
@@ -166,9 +532,9 @@
             </div>
         </div>
 
-        <!--  page 5  -->
+         page 5 
         <div class="page5">
-            <!--  row - 1  -->
+             row - 1 
             <div class="page5-row1">
                 <div class="page5-row1-elem">
                     <h1>$500M</h1>
@@ -186,7 +552,7 @@
                     <p>/003</h4>
                 </div>
             </div>
-            <!--  row - 2  -->
+             row - 2 
             <div class="page5-row2">
                 <div class="page5-row2-elem">
                     <h1>25 million</h1>
@@ -206,7 +572,7 @@
             </div>
         </div>
 
-        <!--  page 6  -->
+         page 6 
         <div class="page6">
             <div class="page6-content">
                 <div class="page6-small-h6">
@@ -222,7 +588,7 @@
             </div>
         </div>
 
-        <!--   page 7  -->
+          page 7 
         <div class="page7">
             <div class="section">
                 <div class="sec-left">
@@ -253,7 +619,7 @@
             </div>
         </div>
 
-        <!--  page 8  -->
+         page 8 
         <div class="page8">
             <div class="page8-emty">
 
@@ -280,7 +646,7 @@
             </div>
         </div>
 
-        <!--  page 9  -->
+         page 9 
         <div class="page9">
             <button>Become a Client</button>
             <div class="page9-right">
@@ -374,7 +740,7 @@
             </div>
         </div>
 
-        <!--  page 10  -->
+         page 10 
         <div class="page10">
             <div class="page10-upper">
                 <p>Industries we serve with <br> Our Digital UX Design Experience</p>
@@ -409,7 +775,7 @@
             </div>
         </div>
 
-        <!--  page 11  -->
+         page 11 
         <div class="page11">
             <h1>Digital Product Design Process</h1>
             <div class="page11-content">
@@ -454,7 +820,7 @@
         </div>
         
 
-        <!--  page 12  -->
+         page 12 
         <div class="page12">
             <div class="page12-examples-section">
                 <div class="examples-head">
@@ -486,7 +852,7 @@
             </div>
         </div>
 
-        <!--  footer  -->
+         footer 
         <footer>
         <div class="container flex footer-section-container">
             <a href="#" class="company-logo">
@@ -521,7 +887,7 @@
         </div>
     </footer>
 
-        <!--  sub footer  -->
+         sub footer 
             <div class="subfooter">
                 <div class="container flex subfooter-container">
                     <a href="#" class="hover-link">Privacy Policy</a>
@@ -534,7 +900,7 @@
                     <p><small>&copy; 2025 FORMULA. All rights reserved.</small></p>
                 </div>
             </div>
-    </div>
+    </div> -->
 
 
 
@@ -549,16 +915,5 @@
 
 
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="app.js"></script>
 </body>
 </html>

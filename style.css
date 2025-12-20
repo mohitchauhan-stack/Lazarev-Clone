@@ -44,9 +44,10 @@ nav{
     align-items: flex-start;
     width: 100%;
     height: 10vh;
-    padding: 1.6vw 10vw;
+    padding: 1.6vw 7vw;
     justify-content: space-between;
     z-index: 10;
+    border-bottom: .5px solid white;
 }
 
 nav h1{
@@ -69,12 +70,13 @@ nav h1{
     font-size: 0.7vw;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 2.5vw;
+    margin-bottom: 4vw;
     margin-inline: 1vw;
 }
 
 .nav-part2 h5{
-    margin: 1vw;
+    margin-top: 1vw;
+
     display: none;
     /* background-color: #810100; */
     overflow: hidden;
@@ -88,14 +90,16 @@ nav h1{
 }
 
 .nav-bottom{
-    width: 80%;
+    width: 50%;
     height: 0vh;
     background-color: rgba(91, 91, 91, 0.3);
     backdrop-filter: blur(10px);
     position: absolute;
     top: 100%;
+    left: 30%;
     z-index: 9;
     border-bottom: .5px solid white;
+    transition: all ease-out .4s;
 }
 
 
