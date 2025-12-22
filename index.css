@@ -115,9 +115,6 @@ font-family:
     --margin-block-xlarge: 12rem 0rem;
     --margin-block-xxlarge: 25rem 0rem;
 
-    /* MISCELLANEOUS */
-    --nav-height: 100px; /* Update the value in the flexbox topic */
-
     /* -- Spacing - Variables -- */
     --space-xs: .4rem;
     --space-sm: .8rem;
@@ -169,15 +166,7 @@ body {
     flex-direction: column;
     /* background-color: rebeccapurple; */
 }
-.nav__container {
-    max-width: 1950px;
-    width: 100%;
-    height: max-content;
-    margin: 0 8rem;
-    /* overflow: hidden; */
-    align-self: center;
-    /* background-color: rebeccapurple; */
-}
+
 
 h1 {
     font-size: var(--text-h1);
@@ -272,6 +261,7 @@ span {
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--border-radius-2xl);
     cursor: pointer;
+    width: 20%;
 }
 
 
@@ -281,15 +271,17 @@ span {
 /* -------------------  NAV - BAR ----------------------- */
 .nav{
     height: var(--nav-height);
+    max-width: 1950px;
     width: 100%;
+    /* height: max-content; */
     padding: 0 var(--space-lg);
-    height: var(--nav-height);
     background-color: rgba(255, 255, 255, 0.104);
     backdrop-filter: blur(17px);
     justify-content: space-between;
     border-bottom: .5px solid var(--text-muted);
     position: fixed;
     top: 0;
+    align-self: center;
 }
 .nav__right{
     gap: var(--space-2xl);
@@ -362,6 +354,9 @@ span {
     color: var(--brand-primary);
 }
 
+.menu__icon{
+    display: none;
+}
 
 
 /* -------------------  HERO - SECTION  ----------------------- */
@@ -434,8 +429,7 @@ span {
 /* -------------------   CTA - SECTION   ----------------------- */
 .cta__section{
     text-align: center;
-    height: 60vh;
-    /* padding: var(--margin-block-xxlarge); */
+    /* height: 70vh; */
     width: 100%;
     background: linear-gradient(90deg, navy, blue);
     /* border: var(--border-card); */
@@ -445,6 +439,8 @@ span {
 
 .cta__bg{
     width: 100%;
+    padding: var(--margin-block-xxlarge);
+
     height: 100%;
     background: url(./my-assets/blob.webp);
     background-size: cover;
@@ -453,7 +449,7 @@ span {
 .cta__content{
     flex-direction: column;
     gap: var(--space-3xl);
-    width: 85%;
+    width: 100%;
 }
 
 .cta__text{
@@ -507,11 +503,7 @@ span {
     color: var(--text-muted);
 }
 
-.cl__btn{
-    width: 20%;
-    line-height: .5;
-    /* margin-bottom: var(--space-4xl); */
-}
+
 
 
 
@@ -583,13 +575,16 @@ span {
     align-items: flex-start;
     gap: var(--space-4xl);
     width: 90%;
+    min-height: 300px;
+    height: 100%;
     border: var(--border-card);
 }
 
 .ac__content{
     width: 100%;
-    /* gap: calc(var(--space-4xl) + 8rem); */
+    gap: var(--space-2xl);
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 
