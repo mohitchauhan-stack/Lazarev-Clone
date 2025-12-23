@@ -1,13 +1,543 @@
-/* --- 1232px = 77rem --- */
-@media screen and (max-width: 77rem) {
+
+/* --- 1440px = 90rem */
+@media screen and (max-width: 90rem) {
     html{
-        font-size: 56.25%;
+        font-size: 43.5%;
     }
-    
+    :root{
+    /* -- Spacing - Variables -- */
+        --space-xs: .3rem;
+        --space-sm: .7rem;
+        --space-md: 1.2rem;
+        --space-lg: 2.6rem;
+        --space-xl: 2.8rem;
+        --space-2xl: 3.2rem;
+        --space-3xl: 3.8rem;
+        --space-4xl: 6rem;
+    /* MARGIN BLOCK */
+        --margin-block-small: 2rem 0rem;
+        --margin-block-medium: 3rem 0rem;
+        --margin-block-large: 5rem 0rem;
+        --margin-block-xlarge: 10rem 0rem;
+        --margin-block-xxlarge: 20rem 0rem;
+    }
+
+/* -------------------   CONTAINER - SECTION   ----------------------- */
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0;
+        height: max-content;
+        /* overflow: hidden; */
+        align-self: center;
+        flex-direction: column;
+        /* background-color: rebeccapurple; */
+    }
+
+
+/* -------------------   NAVBAR - SECTION   ----------------------- */
+    .nav{
+        padding-inline: var(--space-lg);
+    }
+    .nav__container {
+        max-width: 1440px;
+        width: 100%;
+        height: max-content;
+        margin: 0 0rem;
+        /* overflow: hidden; */
+        align-self: center;
+        /* background-color: rebeccapurple; */
+    }
+    .nav__right{
+        /* display: block; */
+    }
+    .menu__icon{
+        display: none;
+        font-size: var(--text-h4);
+    }
+
+/* -------------------   BENTO - GRID - SECTION   ----------------------- */
+    .grid__container{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "box_1 box_1 box_2 box_2 box_3 box_3"
+        "box_4 box_4 box_4 box_5 box_5 box_5";
+    }
+    .box{
+        height: 250px;
+        background-color: var(--color-Neutral);
+        border-radius: var(--border-radius-xl);
+        padding: var(--space-3xl);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: var(--border-card);
+        }
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+.cta__content{
+    margin: var(--margin-inline-small);
+}
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+    .company__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "cmp_1 cmp_2 cmp_3 "
+        "cmp_4 cmp_5 cmp_6"
+        "cmp_7 cmp_8 cmp_9";
+    }
+    .comp{
+        height: 80px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2rem 1rem;
+    }
+    .cl__btn{
+        margin-top: var(--space-3xl);
+        width: 30%;
+    }
+
+/* -------------------   SUCCESS - SECTION   ----------------------- */
+    .content__sc{
+        flex-direction: column;
+    }
+    .sc__heading{
+        margin-bottom: var(--space-2xl);
+    }
+    .sc__content{
+        width: 100%;
+    }
+    .ac__container{
+        gap: calc(var(--space-4xl) + 30rem);
+        align-items: flex-start;
+        color: var(--color-xDark);
+        padding: var(--space-4xl) 0;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: var(--space-xl);
+        grid-template-areas:
+        "ac_1 ac_2 ac_3"
+        "ac_4 ac_5 ac_6";
+    }
+    .ac{
+        padding: var(--space-4xl);
+        background-color: #F5F5F5;
+        border-radius: var(--border-radius-md);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: var(--space-4xl);
+        width: 90%;
+        min-height: 250px;
+        height: 100%;
+        border: var(--border-card);
+    }
+
+/* -------------------   FEATURES - SECTION   ----------------------- */
+    .fea__text{
+        width: 100%;
+    }
+    .feature__bottom{
+        flex-direction: column;
+    }
+    .fea__right{
+        flex-direction: row;
+        gap: var(--space-4xl);
+    }
+    .fea__vdo__content{
+        width: 100%;
+    }
+
+/* -------------------   OFFER - SECTION   ----------------------- */
+    .offer__right{
+        display: none;
+    }
+    .offer__left{
+        width: 100%;
+    }
+    .talk_head{
+        width: 100%;
+    }
+
+/* -------------------   FOOTER - SECTION   ----------------------- */
+    .footer-section-container{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: var(--space-3xl);
+    }
 }
 
 
+/* --- 1024px = 64rem */
+@media screen and (max-width: 64rem) {
+    html{
+        font-size: 37.5%;
+    }
+    :root{
+    /* -- Spacing - Variables -- */
+        --space-xs: .2rem;
+        --space-sm: .6rem;
+        --space-md: 1rem;
+        --space-lg: 2rem;
+        --space-xl: 2.4rem;
+        --space-2xl: 2.8rem;
+        --space-3xl: 3.6rem;
+        --space-4xl: 4.3rem;
+    /* MARGIN BLOCK */
+        --margin-block-small: 2rem 0rem;
+        --margin-block-medium: 3rem 0rem;
+        --margin-block-large: 5rem 0rem;
+        --margin-block-xlarge: 8rem 0rem;
+        --margin-block-xxlarge: 18rem 0rem;
+    }
 
+/* -------------------   CONTAINER - SECTION   ----------------------- */
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0;
+        height: max-content;
+        /* overflow: hidden; */
+        align-self: center;
+        flex-direction: column;
+        /* background-color: rebeccapurple; */
+    }
+
+
+/* -------------------   NAVBAR - SECTION   ----------------------- */
+    .nav{
+        padding-inline: var(--space-lg);
+    }
+    .nav__container {
+        max-width: 1024px;
+        width: 100%;
+        height: max-content;
+        margin: 0 0rem;
+        /* overflow: hidden; */
+        align-self: center;
+        /* background-color: rebeccapurple; */
+    }
+    .nav__right{
+        /* display: block; */
+    }
+    .menu__icon{
+        display: none;
+        font-size: var(--text-h4);
+    }
+
+/* -------------------   BENTO - GRID - SECTION   ----------------------- */
+    .grid__container{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "box_1 box_1 box_2 box_2"
+        "box_3 box_3 box_4 box_4"
+        "box_5 box_5 box_5 box_5";
+    }
+    .box{
+        height: 200px;
+        background-color: var(--color-Neutral);
+        border-radius: var(--border-radius-xl);
+        padding: var(--space-3xl);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: var(--border-card);
+        }
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+.cta__content{
+    margin: var(--margin-inline-small);
+}
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+    .company__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "cmp_1 cmp_2"
+        "cmp_3 cmp_4"
+        "cmp_5 cmp_6"
+        "cmp_7 cmp_8"
+        "cmp_9 cmp_9";
+    }
+    .comp{
+        height: 80px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2rem 1rem;
+    }
+    .cl__btn{
+        width: 50%;
+    }
+
+/* -------------------   SUCCESS - SECTION   ----------------------- */
+    .content__sc{
+        flex-direction: column;
+    }
+    .sc__heading{
+        margin-bottom: var(--space-2xl);
+    }
+    .sc__content{
+        width: 100%;
+    }
+    .ac__container{
+        gap: calc(var(--space-4xl) + 30rem);
+        align-items: flex-start;
+        color: var(--color-xDark);
+        padding: var(--space-4xl) 0;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: var(--space-xl);
+        grid-template-areas:
+        "ac_1 ac_2"
+        "ac_3 ac_4"
+        "ac_5 ac_6";
+    }
+    .ac{
+        padding: var(--space-4xl);
+        background-color: #F5F5F5;
+        border-radius: var(--border-radius-md);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: var(--space-4xl);
+        width: 90%;
+        min-height: 200px;
+        height: 100%;
+        border: var(--border-card);
+    }
+
+/* -------------------   FEATURES - SECTION   ----------------------- */
+    .fea__text{
+        width: 100%;
+    }
+    .feature__bottom{
+        flex-direction: column;
+    }
+    .fea__right{
+        flex-direction: row;
+        gap: var(--space-4xl);
+    }
+    .fea__vdo__content{
+        width: 100%;
+    }
+
+/* -------------------   OFFER - SECTION   ----------------------- */
+    .offer__right{
+        display: none;
+    }
+    .offer__left{
+        width: 100%;
+    }
+    .talk_head{
+        width: 100%;
+    }
+
+/* -------------------   FOOTER - SECTION   ----------------------- */
+    .footer-section-container{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: var(--space-3xl);
+    }
+}
+
+
+/* --- 768px = 48rem */
+@media screen and (max-width: 48rem) {
+    html{
+        font-size: 37.5%;
+    }
+    :root{
+    /* -- Spacing - Variables -- */
+        --space-xs: .2rem;
+        --space-sm: .6rem;
+        --space-md: 1rem;
+        --space-lg: 1.8rem;
+        --space-xl: 2.2rem;
+        --space-2xl: 2.5rem;
+        --space-3xl: 3rem;
+        --space-4xl: 3.8rem;
+    /* MARGIN BLOCK */
+        --margin-block-small: 1rem 0rem;
+        --margin-block-medium: 2rem 0rem;
+        --margin-block-large: 4rem 0rem;
+        --margin-block-xlarge: 7rem 0rem;
+        --margin-block-xxlarge: 17rem 0rem;
+    }
+
+/* -------------------   CONTAINER - SECTION   ----------------------- */
+    .container {
+        max-width: 768px;
+        width: 100%;
+        margin: 0;
+        height: max-content;
+        /* overflow: hidden; */
+        align-self: center;
+        flex-direction: column;
+        /* background-color: rebeccapurple; */
+    }
+
+
+/* -------------------   NAVBAR - SECTION   ----------------------- */
+    .nav{
+        padding-inline: var(--space-lg);
+    }
+    .nav__container {
+        max-width: 768px;
+        width: 100%;
+        height: max-content;
+        margin: 0 0rem;
+        /* overflow: hidden; */
+        align-self: center;
+        /* background-color: rebeccapurple; */
+    }
+    .nav__right{
+        display: none;
+    }
+    .menu__icon{
+        display: block;
+        font-size: var(--text-h4);
+    }
+
+/* -------------------   BENTO - GRID - SECTION   ----------------------- */
+    .grid__container{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "box_1 box_1 box_2 box_2"
+        "box_3 box_3 box_4 box_4"
+        "box_5 box_5 box_5 box_5";
+    }
+    .box{
+        height: 200px;
+        background-color: var(--color-Neutral);
+        border-radius: var(--border-radius-xl);
+        padding: var(--space-xl);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: var(--border-card);
+        }
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+
+
+/* -------------------   COMPANIES - SECTION   ----------------------- */
+    .company__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "cmp_1 cmp_2"
+        "cmp_3 cmp_4"
+        "cmp_5 cmp_6"
+        "cmp_7 cmp_8"
+        "cmp_9 cmp_9";
+    }
+    .comp{
+        height: 80px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2rem 1rem;
+    }
+    .cl__btn{
+        width: 50%;
+    }
+
+/* -------------------   SUCCESS - SECTION   ----------------------- */
+    .content__sc{
+        flex-direction: column;
+    }
+    .sc__heading{
+        margin-bottom: var(--space-2xl);
+    }
+    .sc__content{
+        width: 100%;
+    }
+    .ac__container{
+        gap: calc(var(--space-4xl) + 30rem);
+        align-items: flex-start;
+        color: var(--color-xDark);
+        padding: var(--space-4xl) 0;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: var(--space-xl);
+        grid-template-areas:
+        "ac_1 ac_2"
+        "ac_3 ac_4"
+        "ac_5 ac_6";
+    }
+    .ac{
+        padding: var(--space-4xl);
+        background-color: #F5F5F5;
+        border-radius: var(--border-radius-md);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: var(--space-4xl);
+        width: 90%;
+        min-height: 150px;
+        height: 100%;
+        border: var(--border-card);
+    }
+
+/* -------------------   FEATURES - SECTION   ----------------------- */
+    .fea__text{
+        width: 100%;
+    }
+    .feature__bottom{
+        flex-direction: column;
+    }
+    .fea__right{
+        flex-direction: row;
+        gap: var(--space-4xl);
+    }
+    .fea__vdo__content{
+        width: 100%;
+    }
+
+/* -------------------   OFFER - SECTION   ----------------------- */
+    .offer__right{
+        display: none;
+    }
+    .offer__left{
+        width: 100%;
+    }
+    .talk_head{
+        width: 100%;
+    }
+
+/* -------------------   FOOTER - SECTION   ----------------------- */
+    .footer-section-container{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: var(--space-3xl);
+    }
+}
 
 /* --- 425.6px = 26.6rem */
 @media screen and (max-width: 26.6rem) {
@@ -36,6 +566,7 @@
     .container {
         max-width: 425.6px;
         width: 100%;
+        margin: 0;
         height: max-content;
         /* overflow: hidden; */
         align-self: center;
@@ -45,6 +576,9 @@
 
 
 /* -------------------   NAVBAR - SECTION   ----------------------- */
+    .nav{
+        padding-inline: var(--space-3xl);
+    }
     .nav__container {
         max-width: 425.6px;
         width: 100%;
@@ -176,9 +710,6 @@
     }
     .offer__left{
         width: 100%;
-    }
-    .bg__talk{
-        flex-direction: column-reverse;
     }
     .talk_head{
         width: 100%;
