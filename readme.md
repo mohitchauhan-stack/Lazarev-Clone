@@ -1,6 +1,6 @@
 # 🖤 Lazarev Agency Clone
 
-A **frontend clone** of [Lazarev.agency](https://lazarev.agency/), built from scratch using **HTML5 and CSS3**.
+A **frontend clone** of [Lazarev.agency](https://www.lazarev.agency/), built from scratch using **HTML5 and CSS3**.
 This project was created for **learning purposes** to practice responsive design, semantic markup, and modern CSS effects.
 
 ---
@@ -25,11 +25,11 @@ This project was created for **learning purposes** to practice responsive design
 ## 📸 Preview
 
 
-![Website Header](my-assets/website-header.png)
+![Website Header](./my-assets/lazarev_header.png)
 
-![Website Specs](my-assets/website-specs.png)
+![Website Specs](./my-assets/lazarev__mobile.png)
 
-![Website Footer](my-assets/website-footer.png)
+![Website Footer](./my-assets/lazarev_footer.png)
 
 
 ---
